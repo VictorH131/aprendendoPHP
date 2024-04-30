@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>Formulario de contato</h1>
+
+    <form action="index.php" method="post"> 
+        <table border="1">
+            
+        <FIELdset> 
+            <legend><h2>dados pessoais</h2></legend>
+            <label for="nome">nome:</label><br>
+            <input type="text"  name="nome" ><br>
+
+            <label for="email">email:</label><br>
+            <input type="email" name="email" ><br>
+
+            <label for="endereco">endereço:</label><br>
+            <input type="text" name="endereco" ><br>
+            
+            <label for="cpf">Cpf:</label><br>
+            <input type="text" name="cpf" ><br>
+
+            <label for="data">data de nacimento:</label><br>
+            <input type="date" name="data" ><br>
+        
+            <label for="GENERO">genero :</label><br>
+            <input type="radio" name="sexo"  value="homem" >
+            <label for="GENERO">homen</label><br>
+            
+            <input type="radio" name="sexo"  value="mulher">
+            <label for="GENERO">outro</label><br>
+            
+            <input type="radio" name="sexo"  value="outro">
+            <label for="GENERO">mulher</label><br>
+
+        </FIELdset>
+        <fieldset>
+            <legend><h2>dados livro</h2></legend>
+            <label for="generolivro">genero do livro:</label><br>
+            <input type="checkbox" name="genero" value="terror">
+            <label for="generolivro">terror</label><br>
+
+            <input type="checkbox" name="genero" value="romance">
+            <label for="generolivro">romance</label><br>
+
+            <input type="checkbox" name="genero" value="comedia">
+            <label for="generolivro">comedia</label><br>
+
+            <input type="checkbox" name="genero" value="aventura">
+            <label for="generolivro">aventura</label><br>
+
+            <input type="checkbox" name="genero" value="misterio">
+            <label for="generolivro">misterio</label><br>
+
+            <input type="checkbox" name="genero" value="acao">
+            <label for="generolivro">ação</label><br>
+            
+            <input type="checkbox" name="genero" value="poesia">
+            <label for="generolivro">poesias</label><br>
+        </fieldset>
+        
+        
+        <fieldset>
+            <label for="comentario">feedback sobre nosso site:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea>
+        </fieldset>
+        
+        <input type="submit" value="enviar">    
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
