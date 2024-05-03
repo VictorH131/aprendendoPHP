@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formulario</title>
+    <style>
+        body{
+            width: 20%;
+        }
+    </style>
 </head>
 <body>
     <h1>Formulario de contato</h1>
 
     <form action="index.php" method="post"> 
-        <table border="1">
             
         <FIELdset> 
             <legend><h2>dados pessoais</h2></legend>
@@ -63,11 +67,20 @@
             <input type="checkbox" name="genero" value="poesia">
             <label for="generolivro">poesias</label><br>
         </fieldset>
-        
+        <br>
         
         <fieldset>
+            <legend><h2>Poderia nos ajudar ?</h2></legend>
             <label for="comentario">feedback sobre nosso site:</label><br>
             <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea>
+        
+            <label for="PERGUNTA">gostou do nosso site :</label><br>
+            <input type="radio" name="gostou"  value="sim" >
+            <label for="GENERO">Sim</label><br>
+            
+            <input type="radio" name="gostou"  value="Não">
+            <label for="GENERO">Não</label><br>
+    
         </fieldset>
         
         <input type="submit" value="enviar">    

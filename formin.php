@@ -16,8 +16,7 @@
         $sexo = $_POST['sexo'];
         $data = $_POST['data'];
         $genero = $_POST['genero'];
-
-
+       
 
         echo $nome;
         echo '<P>do email  ' . $email;
@@ -25,7 +24,7 @@
         echo '<P> seu cpf é ' . $cpf;
         echo '<P> seu genero é ' . $sexo;
         echo '<P> a sua data de nacimento é ' . $data;
-        echo '<P> a sua data de nacimento é ' . $generoo;
+        echo '<P> os generos escolhidos foi: ' . $genero;
 
 
     ?>
