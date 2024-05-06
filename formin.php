@@ -18,6 +18,7 @@
         $genero = $_POST['genero'];
        
 
+        
         echo $nome;
         echo '<P>do email  ' . $email;
         echo '<P>voce mora na '. $endereco;
