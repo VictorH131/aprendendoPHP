@@ -1,6 +1,32 @@
     Comandos
 
 
+\\ comandos PHP
+**  para ativar o php precisa ter o seguite comando **
+    
+    <?php
+
+    ?>
+
+
+\\comando Execução/Escrita
+**  ao colocar echo ele escreve oque for colocado entre aspas ou uma variavel   **
+
+    echo "oq deveria ser escrito"; 
+
+**  ao coocar um ponto após ele escrevera outra coisa   **
+
+    echo "oq deveria ser escrito" . $variavel123; 
+
+
+\\ tipos de variavel
+**  atribuição de variavel, tipos de variavel são string, numerico e logico **
+
+    $Variavel = 8;
+
+**  adquirição de varivel (De outra tabela) **
+
+    $VARIAVEL = $_POST["variavel"];
 
 
 \\ Estrutura de Repetição
@@ -8,10 +34,10 @@
 **  While : o sistema de repitição while é usado quando você não sabe quantas vezes o codigo deve se repitir, se a condição for verdadeiro o loop sera     executado, caso contrario (o comando seja falso) não executara, encerrando o loop . 
  i (contador), n (numero de vezes)
 **       
-        while ($i <= 10) {
-            echo $i . "n";
+    while ($i <= 10) {
+        echo $i . "n";
             $i++;
-        }
+    }
 
 
 **  Do While :  O loop Do While é exencialmente parecido com o loop While, com a diferença de que a condição é testada no final de cada codigo. Isso significa que o loop será executado pelo menos uma vez, independentemente da condição.
