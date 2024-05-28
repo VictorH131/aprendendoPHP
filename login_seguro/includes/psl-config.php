@@ -8,4 +8,3 @@
     define("DEFAULT_ROLE", "member");
 
     define("SECURE", FALSE);  // ESTRITAMENTE PARA DESENVOLVIMENTO!!!
-?>

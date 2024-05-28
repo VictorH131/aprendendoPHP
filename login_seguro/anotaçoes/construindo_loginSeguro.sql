@@ -11,7 +11,7 @@ create table `secure_login` .`members` (
     `password` char(128) not null,
     `salt` char(128) not null
 ) engine = innoDB;
-
+ 
 create table `secure_login`. `login_attempts`( /*tabela de numero de tentativas*/
     `user_id` int(11) not null,
     `time`varchar(30) not null
