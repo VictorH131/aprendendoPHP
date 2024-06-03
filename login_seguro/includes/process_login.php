@@ -17,5 +17,5 @@
         }
     }else {
         //as variáveis POST corretas não foram enviadas para esta página. 
-        echo 'invalid Request' (Requisição inválida);
+        echo 'invalid Request';
     }

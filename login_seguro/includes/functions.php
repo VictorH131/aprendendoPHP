@@ -2,7 +2,7 @@
 
     include_once 'psl-config.php';
 
-    function sec_session_starr(){
+    function sec_session_start(){
 
         $session_name='sec_session_id'; // Estabeleça um nome personalizado para a sessão
 
@@ -22,7 +22,7 @@
         // Obtém params de cookies atualizados.
 
         $cookieParams = session_get_cookie_params();
-        session_set_cookie_params($cookie_Params["lifetime"],
+        session_set_cookie_params($cookieParams["lifetime"],
             $cookieParams["path"],
             $cookieParams["domain"],
             $secure,
@@ -32,7 +32,7 @@
 
         session_name($session_name);
 
-        session_start;      //inicia sessaâo PHP
+        session_start();      //inicia sessaâo PHP
         session_regenerate_id(); //Recupera a sessão e deleta a anterior
 
     }
