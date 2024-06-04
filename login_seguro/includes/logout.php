@@ -1,5 +1,5 @@
 <?php
-    include_once 'includes/functions.php';
+    include_once 'functions.php';
     sec_session_start();
    
     // Desfaz todos os valores da sessão  

@@ -10,7 +10,7 @@
     
         // Isso impede que o JavaScript possa acessar a identificação da sessão.
 
-        $httponly = TRUE; 
+        $httponly = true; 
     
         // Assim você força a sessão a usar apenas cookies.
 

@@ -81,7 +81,7 @@ function regformhash(form, uid, email, password, conf) {
 
     // Finalizando, envie o formulário.      
     form.submit();
-    returntrue;
+    return true;
 }
 
 
