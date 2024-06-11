@@ -5,14 +5,14 @@
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <style type="text/css">
             .box{
-                background: #f0f0f0; padding: 20;}
+                background: #f0f0f0; padding: 20px;}
 
         </style>
     </head>
 <body>
-    <div class="conteiner">
+    <div class="container">
         <nav class="navbar navbar-defalt">
-            <div class="conteiner-fluid">
+            <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
                      data-target="#navbar" aria-expanded="false" aria-expanded="false" aria-controls="navbar">
@@ -28,7 +28,7 @@
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="index.php">Home</a></li>
                         <li><a href="insert.php">Add User</a></li>
-                        <li><a href="user.php">All Users</a></li>
+                        <li><a href="users.php">All Users</a></li>
                     </ul>
                 </div><!--nov-collapse-->
             </div><!--continer-fluid-->

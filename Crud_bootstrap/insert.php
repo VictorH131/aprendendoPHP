@@ -1,25 +1,25 @@
 <?php
     // conectando a outras paginas
-    require_once 'connet.php';
+    require_once 'connect.php';
     require_once 'header.php';
 ?>
 
-<div class="conteiner"> <!--colocando para poder adicinar novos usuarios -->
+<div class="container"> <!--colocando para poder adicinar novos usuarios -->
     <?php
        
         if(isset($_POST['addnew'])){
             if( empty($_POST['firstname']) || empty($_POST['lastname']) || empty($_POST['address']) || empty($_POST['contact']) ){
                 echo "Please fillout all required fields";    
             }else{
-                $firstname = $_POST['firtsname'];
+                $firstname = $_POST['firstname'];
                 $lastname = $_POST['lastname'];
                 $address = $_POST['address'];
                 $contact = $_POST['contact'];
             
-                $sql = "INSERT INTO users (firstname, lastname, address, contact) 
-                values ('$firstname', '$lastname', '$address', '$contact') ";    
+                $sql = "INSERT INTO users(firstname, lastname, address, contact) 
+                values ('$firstname', '$lastname', '$address', '$contact')";    
                 
-                if($con->query($sql)=== TRUE){
+                if($con->query($sql) === TRUE){
                     echo "<div class='alert alert-success'>Successfully added new user</div>";
                 }else{
                     echo "<div class='alert alert-danger'> Error: THERE was an error while adding new user</div>";
@@ -30,7 +30,7 @@
     <div class="row">
         <div class="col-md-6-col-md-offset-3">
             <div class="box">
-                <h3><i class="glyphicon glyphipon-plus"></i>&nbsp;Add New User</h3>
+                <h3><i class="glyphicon glyphicon-plus"></i>&nbsp;Add New User</h3>
                 <form action="" method="POST">
                     <label for="firstname">Firstname</label>
                     <input type="text" id="Firstname" name="firstname" class="form-control"><br>
@@ -51,6 +51,5 @@
     </div>    
 </div>
 <?php
-
-        require_once "footer.php";
+    require_once "footer.php";
     

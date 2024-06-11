@@ -3,9 +3,9 @@
     require_once 'header.php';
 ?>
 
-<div class="conteiner">
+<div class="container">
     <?php
-        // da a opção de modificar/updatear
+        /////////////////////////////////////// da a opção de modificar/updatear
         if(isset($_POST['update'])){
             if( empty($_POST['firstname']) || empty($_POST['lastname']) || empty($_POST['address'])) || empty($_POST['contact']){
                 echo "Please fillout all required fields";
@@ -39,6 +39,34 @@
     ?>
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
+            <div class="box">
+                <h3><i class="glyphicon glyphicon-plus"></i>&nbsp;MODIFY USER</h3>
+
+                <form action="" method="POST">
+                    <input type="hidden" value="<?php echo $row['user_id']; ?>" name="userid">
+                    
+                    <label for="firstname">Firstname</label>
+                    <input type="text" id="firstname" name="firstname" value="<?php echo $row['firstname']; ?>" class="form-control"><br>
+
+                    
+                    <label for="lastname">Lastname</label>
+                    <input type="text" id="lastname" name="lastname" value="<?php echo $row['lastname']; ?>" class="form-control"><br>
+
+                    <label for="address">Address</label>
+                    <textarea rows="4" name="address" class="form-control"><?php echo $row['address'];?></textarea><br>
+                    
+                    <label for="contact">Contact</label>
+                    <input type="text" id="contact" name="contact" value="<?php echo $row['contact']; ?>" class="form-control"><br>
+
+                    <input type="submit" name="update" class="btn btn-success" value="Update">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<?php
+    require_once "footer.php";
 
 
 
