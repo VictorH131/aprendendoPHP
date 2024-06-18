@@ -1,3 +1,4 @@
+-- SQLBook: Code
 CREATE Database samueldb;
 CREATE TABLE samueldb.`users`(
     `user_id` int(12) NOT NULL AUTO_INCREMENT PRIMARY KEY,
