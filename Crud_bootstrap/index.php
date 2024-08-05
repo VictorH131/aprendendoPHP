@@ -1,5 +1,5 @@
 <?php
-   // Author: Samuel
+   // Author: Samuel não sei se é comentado
     require_once 'header.php'; // linkando com as info do header
 ?>
 
